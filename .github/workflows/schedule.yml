@@ -2,10 +2,10 @@ name: schedule
 
 on:
   schedule:
-    - cron: "00 12 * * *"
+    - cron: "30 13 * * *"
 
 jobs:
-  build:
+  bot:
     runs-on: ubuntu-latest
 
     env:
