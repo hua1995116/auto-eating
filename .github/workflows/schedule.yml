@@ -2,14 +2,12 @@ name: schedule
 
 on:
   schedule:
-    - cron: "20 14 * * *"
+    # 真实 -8
+    - cron: "30 22 * * *"
 
 jobs:
   bot:
     runs-on: ubuntu-latest
-
-    env:
-      TZ: Asia/Shanghai
 
     steps:
       - name: eating eating
