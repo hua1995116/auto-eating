@@ -1,0 +1,17 @@
+name: schedule
+
+on:
+  schedule:
+    - cron: "30 11 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+      - name: eating eating
+        run: |
+          curl -X POST -H "Content-Type: application/json" -d '{"msg_type":"text","content":{"text":"点饭啦"}}' ${{secrets.GROUP_URL}}
