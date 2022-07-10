@@ -3,7 +3,7 @@ name: schedule
 on:
   schedule:
     # 真实 -8
-    - cron: "30 22 * * *"
+    - cron: "30 3 * * *"
 
 jobs:
   bot:
